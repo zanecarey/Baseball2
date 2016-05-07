@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zane.baseball.OffensiveButtons"
+    android:clickable="false"
+    android:background="@drawable/trout2">>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnWin_AT"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="win1"-->
+        <!--android:text="Pitcher Wins: All time"-->
+        <!--&lt;!&ndash;android:background="#ffffff" />&ndash;&gt;-->
+    <!--<Button-->
+        <!--android:id="@+id/btnWin_Season"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="win2"-->
+        <!--android:text="Pitcher Wins: Single Season"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_below="@+id/btnWin_AT"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="32dp" />-->
+    <Button
+        android:id="@+id/btnHR_AT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hrlead"
+        android:minHeight="0dp"
+        android:text="Home Runs: All Time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnHR_Season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="hr2"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="Home Runs: Single Season"
+        android:layout_below="@+id/btnHR_AT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnRBI_AT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="rbi1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="RBIs: All Time"
+        android:layout_below="@+id/btnHR_Season"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnRBI_Season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="rbi2"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="RBIs: Single Season"
+        android:layout_below="@+id/btnRBI_AT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnSB_AT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sb1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="Stolen Bases: Career"
+        android:layout_below="@+id/btnRBI_Season"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnSB_Season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sb2"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="Stolen Bases: Single Season"
+        android:layout_below="@+id/btnSB_AT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnAVG_Career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="avg1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="Batting Avg: Career"
+        android:layout_below="@+id/btnSB_Season"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnAVG_Season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="avg2"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="Average: Single Season"
+        android:layout_below="@+id/btnAVG_Career"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnzWar_Career"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="war1"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="zWar Leaders: Career"
+        android:layout_below="@+id/btnAVG_Season"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btnzWar_Season"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="war2"
+        android:layout_margin="4dp"
+        android:minHeight="0dp"
+        android:text="ZWAR Leaders: Season"
+        android:layout_below="@+id/btnzWar_Career"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
