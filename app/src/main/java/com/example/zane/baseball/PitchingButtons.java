@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import org.json.JSONObject;
@@ -18,8 +20,11 @@ public class PitchingButtons extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pitching_buttons);
         ButtonScreen.lastActivity = 2;
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //Remove notification bar
+        setContentView(R.layout.activity_pitching_buttons);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //Wins_AT button pressed
         Button clickButton1 = (Button) findViewById(R.id.btnWin_AT);
         clickButton1.setOnClickListener(new View.OnClickListener() {
