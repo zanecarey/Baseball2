@@ -30,14 +30,18 @@
         <!--android:layout_alignParentStart="true"-->
         <!--android:layout_marginTop="32dp" />-->
     <Button
+        android:outlineProvider="bounds"
         android:id="@+id/btnHR_AT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="hrlead"
         android:minHeight="0dp"
         android:text="Home Runs: All Time"
+        android:background="@layout/transparent_button"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:shadowColor="#cf5656"
+        android:singleLine="false" />
     <Button
         android:id="@+id/btnHR_Season"
         android:layout_width="match_parent"

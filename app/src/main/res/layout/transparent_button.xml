@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <item android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <shape android:shape="rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--apply button background transparent, full opacity-->
+            <solid android:color="#00ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--make button border solid color, nontransparent-->
+            <stroke android:color="#FF000000" android:width="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <corners android:radius="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </shape>
+    </item>
+</selector>
