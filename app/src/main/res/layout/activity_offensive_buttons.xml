@@ -37,6 +37,7 @@
         android:onClick="hrlead"
         android:layout_margin="4dp"
         android:minHeight="40dp"
+        android:alpha="0.5"
         android:text="Home Runs: All Time"
         android:background="@layout/transparent_button"
         android:layout_alignParentLeft="true"
