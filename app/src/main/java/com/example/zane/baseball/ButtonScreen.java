@@ -119,7 +119,7 @@ public class ButtonScreen extends AppCompatActivity {
                                 name = input.getText().toString();
                                 if (name.length() == 0) {
                                     noName = true;
-                                    SearchButton.notFound = 1;
+                                    notFound = 1;
                                 } else {
                                     String[] nameArray = name.split(" ");
                                     if (nameArray.length != 2) {
