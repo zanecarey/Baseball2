@@ -32,7 +32,6 @@
             android:name=".DataDisplay"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".OffensiveButtons" />
         <activity android:name=".PitchingButtons" />
         <activity android:name=".SearchButton" />

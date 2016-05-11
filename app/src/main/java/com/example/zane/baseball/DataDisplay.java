@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -179,18 +180,14 @@ public class DataDisplay extends AppCompatActivity {
             }
             else if(ButtonScreen.lastActivity == 3)
             {
-//                if(ButtonScreen.noName == true)
-//                {
-//                    textview.append("Did not enter a name!");
-//                }
-                if(SearchButton.notFound==1)
+                if(ButtonScreen.notFound==1)
                 {
                     textview.append("Player " + ButtonScreen.firstName + " " + ButtonScreen.lastName + " not found  (Check Spelling)");
                 }
                 else if(ButtonScreen.batterSearch ==1)
                 {
                     textview.setText("          Stats for: " + ButtonScreen.firstName + " " + ButtonScreen.lastName);
-                    theString = new JSONObject(SearchButton.result);
+                    theString = new JSONObject(ButtonScreen.result);
                     JSONArray jsonArray = theString.optJSONArray("players");
                     textview.append("\n");
                     textview.append("____________________________________________");
@@ -223,7 +220,7 @@ public class DataDisplay extends AppCompatActivity {
                 else if(ButtonScreen.pitcherSearch == 1)
                 {
                     textview.setText("          Stats for: " + ButtonScreen.firstName + " " + ButtonScreen.lastName);
-                    theString = new JSONObject(SearchButton.result);
+                    theString = new JSONObject(ButtonScreen.result);
                     JSONArray jsonArray = theString.optJSONArray("players");
                     textview.append("\n");
                     textview.append("____________________________________________");
