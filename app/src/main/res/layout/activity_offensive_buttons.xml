@@ -29,6 +29,16 @@
         <!--android:layout_alignParentLeft="true"-->
         <!--android:layout_alignParentStart="true"-->
         <!--android:layout_marginTop="32dp" />-->
+    <!--<com.qwerjk.better_text.MagicTextView-->
+        <!--&lt;!&ndash;xmlns:qwerjk="http://schemas.android.com/apk/res/com.qwerjk.better_text"&ndash;&gt;-->
+        <!--android:textSize="78dp"-->
+        <!--android:textColor="#ff333333"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--qwerjk:strokeColor="#FFff0000"-->
+        <!--qwerjk:strokeJoinStyle="miter"-->
+        <!--qwerjk:strokeWidth="5"-->
+        <!--android:text="M" />-->
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnHR_AT"
@@ -37,13 +47,19 @@
         android:onClick="hrlead"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
         android:text="Home Runs: All Time"
         android:background="@layout/transparent_button"
+        android:alpha="0.99"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:singleLine="false" />
+        android:singleLine="false"
+        android:textSize="24dp" />
     <Button
+
         android:outlineProvider="bounds"
         android:id="@+id/btnHR_Season"
         android:layout_width="match_parent"
@@ -51,12 +67,17 @@
         android:onClick="hr2"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:text="Home Runs: Single Season"
         android:layout_below="@+id/btnHR_AT"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnRBI_AT"
@@ -65,12 +86,17 @@
         android:onClick="rbi1"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:text="RBIs: All Time"
         android:layout_below="@+id/btnHR_Season"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnRBI_Season"
@@ -79,12 +105,17 @@
         android:onClick="rbi2"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:text="RBIs: Single Season"
         android:layout_below="@+id/btnRBI_AT"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnSB_AT"
@@ -93,12 +124,17 @@
         android:onClick="sb1"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:text="Stolen Bases: Career"
         android:layout_below="@+id/btnRBI_Season"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnSB_Season"
@@ -107,12 +143,17 @@
         android:onClick="sb2"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="3"
+        android:shadowDy="3"
         android:text="Stolen Bases: Single Season"
         android:layout_below="@+id/btnSB_AT"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnAVG_Career"
@@ -121,12 +162,17 @@
         android:onClick="avg1"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="5"
+        android:shadowDy="5"
         android:text="Batting Avg: Career"
         android:layout_below="@+id/btnSB_Season"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnAVG_Season"
@@ -135,12 +181,17 @@
         android:onClick="avg2"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="5"
+        android:shadowDy="5"
         android:text="Average: Single Season"
         android:layout_below="@+id/btnAVG_Career"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
 
     <Button
         android:outlineProvider="bounds"
@@ -150,24 +201,46 @@
         android:onClick="war1"
         android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
         android:text="zWar Leaders: Career"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="5"
+        android:shadowDy="5"
         android:layout_below="@+id/btnAVG_Season"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
     <Button
         android:outlineProvider="bounds"
         android:id="@+id/btnzWar_Season"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="war2"
-        android:layout_margin="0dp"
+        android:layout_margin="4dp"
         android:minHeight="40dp"
-        android:alpha="0.75"
+        android:alpha="0.99"
         android:background="@layout/transparent_button"
         android:text="ZWAR Leaders: Season"
+        android:shadowColor="#f9fafa"
+        android:shadowRadius="1.5"
+        android:shadowDx="5"
+        android:shadowDy="5"
         android:layout_below="@+id/btnzWar_Career"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textSize="24dp" />
+
+    <!--<EditText-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:inputType="number"-->
+        <!--android:ems="10"-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignRight="@+id/btnHR_AT"-->
+        <!--android:layout_alignEnd="@+id/btnHR_AT"-->
+        <!--android:layout_marginRight="49dp"-->
+        <!--android:layout_marginEnd="49dp" />-->
 </RelativeLayout>

@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:text="THE"
+        android:text=""
         android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
